@@ -294,13 +294,8 @@ export default async function Home() {
               aria-label="Follow on X"
               icon={XIcon}
             />
-            {/* <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            /> */}
             <SocialLink
-              href="#"
+              href="https://github.com/CharlesOuverleaux"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
