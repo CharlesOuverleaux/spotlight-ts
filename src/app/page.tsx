@@ -273,7 +273,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Frontend Engineer and entrepreneur, building products that makes a
+            Frontend Engineer & Entrepreneur, building products that make a
             difference.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -285,11 +285,15 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/charlesouverleaux/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+            <SocialLink
+              href="https://x.com/CO_IN_TECH"
+              aria-label="Follow on X"
+              icon={XIcon}
+            />
             {/* <SocialLink
               href="#"
               aria-label="Follow on Instagram"
