@@ -10,7 +10,7 @@ const projects = [
     name: 'Planetaria',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: '/projects/project-a', label: 'planetaria.tech' },
+    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
     logo: logoAmazon,
   },
   {
