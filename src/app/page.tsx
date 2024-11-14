@@ -5,16 +5,13 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
+import logoMetycle from '@/images/logos/metycle.png'
+import logoProjectA from '@/images/logos/projectA.png'
+import logoOneFootball from '@/images/logos/onefootball.png'
+import logoAmazon from '@/images/logos/amazon.png'
+import logoNu3 from '@/images/logos/nu3.png'
+import logoHome24 from '@/images/logos/home24.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -159,7 +156,12 @@ function Role({ role }: { role: Role }) {
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+        <Image
+          src={role.logo}
+          alt=""
+          className="h-7 w-7 rounded-full"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -187,35 +189,63 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'METYCLE',
+      title: 'Frontend Engineer',
+      logo: logoMetycle,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'Project A',
+      title: 'Frontend Engineer',
+      logo: logoProjectA,
+      start: '2023',
+      end: '2024',
+    },
+    {
+      company: 'Metycle - Projet A',
+      title: 'Frontend Engineer',
+      logo: logoProjectA,
+      start: '2023',
+      end: '2024',
+    },
+    {
+      company: 'Enapi - Projet A',
+      title: 'Frontend Engineer',
+      logo: logoProjectA,
+      start: '2023',
+      end: '2023',
+    },
+    {
+      company: 'OneFootball',
+      title: 'Junior software engineer',
+      logo: logoOneFootball,
+      start: '2022',
+      end: '2023',
+    },
+    {
+      company: 'Amazon',
+      title: 'Strategic Startup Manager',
+      logo: logoAmazon,
+      start: '2019',
+      end: '2021',
+    },
+    {
+      company: 'nu3',
+      title: 'Key Account Manager',
+      logo: logoNu3,
+      start: '2016',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Home24',
+      title: 'International Account Manager',
+      logo: logoHome24,
+      start: '2014',
+      end: '2016',
     },
   ]
 
@@ -273,7 +303,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Frontend Engineer & Entrepreneur, building products that make a
+            Frontend Engineer & Entrepreneur. Building products that make a
             difference.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
