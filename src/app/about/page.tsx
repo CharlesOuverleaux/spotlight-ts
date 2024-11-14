@@ -4,13 +4,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
+import portraitImage from '@/images/portrait.png'
 
 function SocialLink({
   className,
@@ -50,7 +45,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'I’m Charles Ouverleaux. I live in Berlin, where I build  products that make a difference.',
 }
 
 export default function About() {
@@ -69,58 +64,74 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+            I’m Charles Ouverleaux. I live in Berlin, where I build products
+            that make a difference.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I’ve loved building things for as long as I can remember, after
+              woring on the business side (Account Management and Marketing) for
+              over 6 years, I decided to dive into software engineering to be
+              able to create new products more indepently.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              I started my journey learning the fundamentals of programming on
+              my own but quickly realized that I needed strucutre and hands on
+              experience to be able to learn faster and more efficiently. I
+              joined a coding bootcamp (LeWagon) where I learned the basics of
+              web development. I ended the bootcamp leading a MVP project from
+              ideation to production, which was really fun.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              The bootcamp was great to get the basics but to work as a
+              developer, I focused on learning and building with commonly used
+              tech stacks. I spent time learning React and diving into next.js.
+              After contributing to the next.js community, I crossed path with
+              people at OneFootball Labs and that&apos;s where my professional
+              journey started.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              I spent the next years working as a software engineer, focusing on
+              frontend technologies, for multiple companies. At OneFootball, we
+              developed a cutting-edge web3 marketplace using React and
+              TypeScript. At Project A, I had the chance to contribute to a wide
+              range of projects, from building products from scratch to working
+              on a large scale platforms.
+            </p>
+            <p>
+              Today, I’m working at Metycle as a Frontend Engineer, supporting
+              to build a ciruclar economy for metals. On the side I founded and
+              run ontour.pro, where we develop technologies that empower diy
+              musicians to plan their tours. Sometimes, I write about triathlons
+              and surfing :)
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
+            <SocialLink href="https://x.com/CO_IN_TECH" icon={XIcon}>
               Follow on X
             </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/CharlesOuverleaux"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/charlesouverleaux/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:charlesantoine.ouverleaux@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              charlesantoine.ouverleaux@gmail.com
             </SocialLink>
           </ul>
         </div>
