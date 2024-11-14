@@ -154,7 +154,7 @@ function Resume() {
       end: '2024',
     },
     {
-      company: 'Metycle - Projet A',
+      company: 'METYCLE - Projet A',
       title: 'Frontend Engineer',
       logo: logoProjectA,
       start: '2023',
