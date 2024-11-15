@@ -64,7 +64,7 @@ const works = [
   {
     name: 'nu3',
     description:
-      'Led the category managment of the French market and led the CRM marketing team',
+      'Led the category management of the French market and led the CRM marketing team',
     link: { href: '/work/nu3', label: 'nu3.de' },
     logo: logoNu3,
   },
