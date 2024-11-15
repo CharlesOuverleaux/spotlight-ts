@@ -70,9 +70,9 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               I’ve loved building things for as long as I can remember, after
-              woring on the business side (Account Management and Marketing) for
-              over 6 years, I decided to dive into software engineering to be
-              able to create new products more indepently.
+              working on the business side (Account Management and Marketing)
+              for over 6 years, I decided to dive into software engineering to
+              be able to create new products more independently.
             </p>
             <p>
               I started my journey learning the fundamentals of programming on
