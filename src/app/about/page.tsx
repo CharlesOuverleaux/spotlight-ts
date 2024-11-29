@@ -96,7 +96,7 @@ export default function About() {
               developed a cutting-edge web3 marketplace using React and
               TypeScript. At Project A, I had the chance to contribute to a wide
               range of projects, from building products from scratch to working
-              on a large scale platforms.
+              on large scale platforms.
             </p>
             <p>
               Today, I’m working at Metycle as a Frontend Engineer, supporting
