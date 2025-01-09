@@ -262,15 +262,14 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Frontend Engineer & Entrepreneur. Building products that make a
-            difference.
+            Frontend engineer & product developer, crafting impactful apps that
+            make a difference.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Charles, a frontend engineer and entrepreneur based in Berlin,
-            Germany. I’m currently working at Metycle as a Frontend Engineer,
-            supporting to build a ciruclar economy for metals. On the side I run
-            ontour.pro, where we develop technologies that empower diy musicians
-            to plan their tours.
+            I’m Charles, a frontend engineer and product developer based in
+            Berlin, Germany. I’m currently working at METYCLE as a Frontend
+            Engineer, building a circular economy for metals. On the side, I
+            craft SaaS for communities I’m passionate about.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
