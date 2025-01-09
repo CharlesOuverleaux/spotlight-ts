@@ -27,20 +27,6 @@ const works = [
     logo: logoProjectA,
   },
   {
-    name: 'Project A - METYCLE',
-    description:
-      'Project: enabled a seamless content delivery experience and improved overall system performance and maintainability',
-    link: { href: '/work/project-a-metycle', label: 'project-a.com' },
-    logo: logoProjectA,
-  },
-  {
-    name: 'Project A - Enapi',
-    description:
-      'Project: developed the MVP of the user interface from the ground up',
-    link: { href: '/work/project-a-enapi', label: 'project-a.com' },
-    logo: logoProjectA,
-  },
-  {
     name: 'OneFootball (Labs)',
     description:
       'Developed a cutting-edge web3 marketplace using React and TypeScript',
