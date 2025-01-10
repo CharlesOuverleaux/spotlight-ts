@@ -2,11 +2,9 @@ import { type Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
+import Thumbnail from '@/images/avatar.png'
 
 import '@/styles/tailwind.css'
-
-const Thumbnail =
-  '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.a53c1f25.png'
 
 export const metadata: Metadata = {
   title: {
@@ -24,8 +22,8 @@ export const metadata: Metadata = {
     url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
     images: [
       {
-        url: Thumbnail,
-        secureUrl: Thumbnail,
+        url: Thumbnail.src,
+        secureUrl: Thumbnail.src,
         width: 1200,
         height: 630,
         alt: "Preview image for Charles Ouverleaux's Blog",
