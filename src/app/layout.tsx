@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-import Thumbnail from '@/images/avatar.png'
+import Thumbnail from '@/images/portrait.png'
 
 import '@/styles/tailwind.css'
 
