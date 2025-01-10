@@ -5,7 +5,8 @@ import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 
-const Thumbnail = '/images/avatar.png'
+const Thumbnail =
+  '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.a53c1f25.png'
 
 export const metadata: Metadata = {
   title: {
@@ -27,11 +28,11 @@ export const metadata: Metadata = {
         secureUrl: Thumbnail,
         width: 1200,
         height: 630,
-        alt: "Preview image for Dan Mugh's Blog",
+        alt: "Preview image for Charles Ouverleaux's Blog",
       },
     ],
     type: 'website',
-    siteName: "Dan Mugh's Blog",
+    siteName: "Charles Ouverleaux's Blog",
   },
   alternates: {
     types: {
