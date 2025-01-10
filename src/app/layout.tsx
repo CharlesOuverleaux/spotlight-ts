@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Charles Ouverleaux',
     default:
-      'Charles Ouverleaux - Frontend Engineer and Entrepreneur. Building products that makes a difference.',
+      'Charles Ouverleaux - Frontend engineer & product developer, crafting impactful apps that make a difference.',
   },
   description:
-    'I’m Charles, a frontend engineer and entrepreneur based in Berlin, Germany. I’m currently working at Metycle as a Frontend Engineer, supporting to build a ciruclar economy for metals. On the side I run ontour.pro, where we develop technologies that empower diy musicians to plan their tours.',
+    'I’m Charles, a frontend engineer and product developer based in Berlin, Germany. I’m currently working at METYCLE as a Frontend Engineer, building a circular economy for metals. On the side, I craft SaaS for communities I’m passionate about.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
