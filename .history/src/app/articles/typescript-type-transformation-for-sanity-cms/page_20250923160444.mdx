@@ -1,0 +1,43 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Charles Ouverleaux',
+  date: '2025-09-22',
+  title: 'CMS Migration - Sanity and TypeScript deep-dive',
+  description:
+    'We decided to migrate our CMS from Contentful to Sanity, this to achieve substantial reductions in our monthly operational costs. Integrating Sanity was great but also came with technical challenges, in this article we did a deep-dive on how we kept types clean and aligned',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+*TypeScript type transformation for Sanity CMS: Automatically resolving references and removing system keys in dynamic page builder components*
+
+## The Challenge
+
+We decided to migrate our CMS from Contentful to Sanity, this to achieve substantial reductions in our monthly operational costs. While Contentful's pricing model had become misaligned with our content requirements, Sanity's structure allows us to maintain predictable, fixed operational expenses regardless of scale. Although the migration required a significant upfront investment in developer resources, this strategic move has positioned us for long-term cost efficiency and better aligns our infrastructure costs with our business needs.
+
+When building dynamic page builders with Sanity CMS, developers face a fundamental type safety problem. Sanity's TypeGen generates types based on raw data storage format, including unresolved references and internal system metadata. However, your frontend components need clean, resolved data structures.
+
+This creates a critical mismatch between generated types and actual runtime data, forcing developers to choose between type safety and maintainability.
+
+## Understanding the Problem
+
+### The Page Builder Context
+
+Modern content management demands flexibility. In our system, Sanity CMS powers a modular  that gives content creators complete creative freedom:
+
+- Component Library: Pre-built, reusable components (team lists, content sections, CTAs)
+- Drag & Drop Interface: Content creators arrange components in any order
+
+Dynamic Configuration: Each component's content and settings are fully customizable
+
+Unlimited Combinations: Every page becomes unique and unpredictable
+
+This flexibility creates two levels of technical complexity:
+
+Multi-level Nesting: Components contain other components (e.g., TeamMemberList → TeamMemberItem → Link)

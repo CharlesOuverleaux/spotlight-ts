@@ -1,0 +1,53 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import tailwindUI from './tailwindui.png'
+
+export const article = {
+  author: 'Charles Ouverleaux',
+  date: '2025-09-22',
+  title: 'CMS Migration - Sanity and TypeScript deep-dive',
+  description:
+    'As a developer it is important to have your own website. I wanted to combine development speed and professional look/performance. This is how I decided on: React, TypeScript, Next.js, Tailwind CSS and Vercel.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+When building a profile page, I wanted it to stand out, showcasing not just my skills but also my ideas and experiences. To make a great first impression, it had to be modern and fast.
+
+Highlighting my skills and experience meant designing a quick overview of my resume with an option for people to dive deeper if they’re interested. I also wanted a dedicated space to share articles about what I'm building or learning, a spot to show work in progress.
+
+Lastly, I wanted an easy way to monitor the site’s performance and track visits.
+
+Here's how I approached it and what I have used:
+
+## TailwindUI (React / Next.js / TypeScript / TailwindCSS)
+
+<Image src={tailwindUI} alt="" />
+
+There are so many CSS frameworks to choose from :) For my projects, I went with [TailwindUI](https://tailwindui.com/)—not just because I had access to the paid version, but because it’s genuinely so good for speed and flexibility. Tailwind lets you build fast, and when I want to customize something, it’s super adaptable.
+
+Another bonus is that I’m working with Tailwind snippets in TypeScript, and along the way, I’ve picked up some really solid design patterns. It’s been a win for both productivity and leveling up my skills! For the first time, I used a template ([Spotlight](https://tailwindui.com/templates/spotlight)), and this was very close to what I needed.
+
+Things I changed:
+
+1. Removed the newsletter subscription
+2. Added detailed job pages
+3. Adapted the projects to link to job pages (can't believe Tailwind rick rolled me)
+4. Removed the speaking part (I will add articles instead of having a specific page for that)
+
+## Vercel
+
+Once I got all my content in, I deployed my next.js app on vercel. I really enjoy how simple the process is. I simply linked up my github repository and deployed to production.
+
+## Monitoring
+
+Next.js has a super simple Web Analytics and Speed Insights available. I simply added the components to the root of the project. Adding this for my profile page is more than enough.
+
+## Improvements
+
+It was really quick to develop and deploy everything. That being said, I don't like to go through git/github to edit the content of the site.
+One quick way to solve this would be to add a CMS to this architecture. I've used Sanity and Contentful in the past and noticed that a few next.js projects come with Sanity. I don't need it for this site but I for a blog it can be really helpful.

@@ -1,0 +1,54 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Charles Ouverleaux',
+  date: '2025-09-22',
+  title: 'CMS Migration - Sanity and TypeScript deep-dive',
+  description:
+    'We decided to migrate our CMS from Contentful to Sanity, this to achieve substantial reductions in our monthly operational costs. Integrating Sanity was great but also came with technical challenges, in this article we did a deep-dive on how we kept types clean and aligned',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+### \*TypeScript type transformation for Sanity CMS: Automatically resolving references and removing
+
+system keys in dynamic page builder components\*
+
+## The Challenge
+
+We decided to migrate our CMS from Contentful to Sanity, this to achieve substantial reductions in our monthly operational costs. While Contentful's pricing model had become misaligned with our content requirements, Sanity's structure allows us to maintain predictable, fixed operational expenses regardless of scale. Although the migration required a significant upfront investment in developer resources, this strategic move has positioned us for long-term cost efficiency and better aligns our infrastructure costs with our business needs.
+
+When building dynamic page builders with Sanity CMS, developers face a fundamental type safety problem. generates types based on raw data storage format, including unresolved references and internal system metadata. However, your frontend components need clean, resolved data structures.
+
+This creates a critical mismatch between generated types and actual runtime data, forcing developers to choose between type safety and maintainability.
+
+## TailwindUI (React / Next.js / TypeScript / TailwindCSS)
+
+There are so many CSS frameworks to choose from :) For my projects, I went with [TailwindUI](https://tailwindui.com/)—not just because I had access to the paid version, but because it’s genuinely so good for speed and flexibility. Tailwind lets you build fast, and when I want to customize something, it’s super adaptable.
+
+Another bonus is that I’m working with Tailwind snippets in TypeScript, and along the way, I’ve picked up some really solid design patterns. It’s been a win for both productivity and leveling up my skills! For the first time, I used a template ([Spotlight](https://tailwindui.com/templates/spotlight)), and this was very close to what I needed.
+
+Things I changed:
+
+1. Removed the newsletter subscription
+2. Added detailed job pages
+3. Adapted the projects to link to job pages (can't believe Tailwind rick rolled me)
+4. Removed the speaking part (I will add articles instead of having a specific page for that)
+
+## Vercel
+
+Once I got all my content in, I deployed my next.js app on vercel. I really enjoy how simple the process is. I simply linked up my github repository and deployed to production.
+
+## Monitoring
+
+Next.js has a super simple Web Analytics and Speed Insights available. I simply added the components to the root of the project. Adding this for my profile page is more than enough.
+
+## Improvements
+
+It was really quick to develop and deploy everything. That being said, I don't like to go through git/github to edit the content of the site.
+One quick way to solve this would be to add a CMS to this architecture. I've used Sanity and Contentful in the past and noticed that a few next.js projects come with Sanity. I don't need it for this site but I for a blog it can be really helpful.
