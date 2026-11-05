@@ -3,8 +3,9 @@ import metycle from './metycle.png'
 
 export const article = {
   author: 'Charles Ouverleaux',
-  title: 'Frontend Engineer - METYCLE',
-  description: 'Frontend Engineer at METYCLE',
+  title: 'Full Stack | Product Engineer - METYCLE',
+  description:
+    'METYCLE is a digital B2B marketplace for international secondary metal trading. The AI-powered platform connects buyers and sellers of scrap metals globally.',
 }
 
 export const metadata = {
@@ -14,10 +15,29 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-I’ve just started at METYCLE, and I’m really excited to share more about it as I get settled in! Once I’m deeper into the work, I’ll update this page with details about our tech stack and the challenges we’re tackling.
+**METYCLE** is a digital B2B marketplace for international secondary metal trading. The AI-powered platform connects buyers and sellers of scrap metals globally.
 
-For now, here’s a quick intro: METYCLE is all about accelerating the global circular flow of secondary metals. It’s where innovation meets sustainability, and the team is committed to leading the way toward a greener, more sustainable future. Stay tuned—I’ll have plenty more to share soon!
+### Tech Stack
 
-## Digital Platform
+|                       |                 |                |
+| :-------------------- | :-------------: | -------------: |
+| React 18              |   TypeScript    |           Vite |
+| Nx                    |    shadcn/ui    |       Radix UI |
+| Tailwind CSS          |    Storybook    |    React Query |
+| React Hook Form       |       Zod       |         Vitest |
+| Playwright            |  Sanity (CMS)   |   LaunchDarkly |
+| AWS Copilot           |     Sentry      |         Retool |
+| Claude Code           |   CodeRabbit    | GitHub Actions |
 
-<Image src={metycle} alt="" />
+<Image src={metycle} alt="METYCLE platform" />
+
+### Work | 2024 - Present
+
+- Shifted the team to **agentic development**: we write specs first, then Claude Code agents connected to our tools through MCP servers implement, test and review the features, while engineers own the architecture and code quality. Built this way, the internal platform **shipped in 8 weeks instead of 6 months**
+- Developing and maintaining the **Customer Platform**, a B2B marketplace for secondary metals trading, including notifications, order tracking, bidding, and shipment management
+- Rebuilding the internal **Trading Platform** from a vibe-coded Lovable app into a production-ready full-stack application for orders, finance, hedging, shipments, claims, and documents, **migrated with zero downtime** for the trading team
+- Built an **automated bug triage flow for Foundry**: every new ticket on our board triggers a Claude Code agent that checks it against the codebase, classifies it as a bug or a feature request, and when confident **implements the fix and opens a draft PR**. This cut bug fixing time from **1-2 days to 1-2 hours**, and developers spend **no time on preparation**, only reviewing the final result
+- Implementing a **reusable design system with Storybook and shadcn/ui** across multiple applications
+- Maintaining an **Nx monorepo** housing three apps: Customer Platform, Static Website (SSR), and Sanity CMS Studio
+- Leading the **CMS migration from Contentful to Sanity using Claude Code**, pioneering AI-assisted workflows
+- Going **on-site to sorting centers** to understand the business first-hand, and working directly with stakeholders **from plant operators up to C-level**

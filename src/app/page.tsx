@@ -136,7 +136,7 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'METYCLE',
-      title: 'Frontend Engineer',
+      title: 'Full Stack | Product Engineer',
       logo: logoMetycle,
       start: '2024',
       end: {
@@ -248,13 +248,13 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Frontend engineer & product developer, crafting impactful apps.
+            Full Stack | Product Engineer, crafting impactful apps.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Charles, a frontend engineer and product developer based in
-            Berlin, Germany. I’m currently working at METYCLE as a Frontend
-            Engineer, building a circular economy for metals. On the side, I
-            craft SaaS for communities I’m passionate about.
+            I’m Charles, a full stack & product engineer based in Berlin,
+            Germany. I’m currently working at METYCLE, building a circular
+            economy for metals. On the side, I craft SaaS for communities I’m
+            passionate about.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

@@ -99,9 +99,9 @@ export default function About() {
               on large scale platforms.
             </p>
             <p>
-              Today, I’m working at Metycle as a Frontend Engineer, supporting
-              to build a ciruclar economy for metals. On the side I founded and
-              run ontour.pro, where we develop technologies that empower diy
+              Today, I’m working at METYCLE as a Full Stack | Product Engineer,
+              helping build a circular economy for metals. On the side I founded
+              and run ontour.pro, where we develop technologies that empower diy
               musicians to plan their tours. Sometimes, I write about triathlons
               and surfing :)
             </p>

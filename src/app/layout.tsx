@@ -10,15 +10,15 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Charles Ouverleaux',
     default:
-      'Charles Ouverleaux - Frontend engineer & product developer, crafting impactful apps.',
+      'Charles Ouverleaux - Full Stack | Product Engineer, crafting impactful apps.',
   },
   description:
-    'I’m Charles, a frontend engineer and product developer based in Berlin, Germany. I’m currently working at METYCLE as a Frontend Engineer, building a circular economy for metals. On the side, I craft SaaS for communities I’m passionate about.',
+    'I’m Charles, a full stack & product engineer based in Berlin, Germany. I’m currently working at METYCLE, building a circular economy for metals. On the side, I craft SaaS for communities I’m passionate about.',
   openGraph: {
     title:
-      'Charles Ouverleaux - Frontend engineer & product developer, crafting impactful apps.',
+      'Charles Ouverleaux - Full Stack | Product Engineer, crafting impactful apps.',
     description:
-      'I’m Charles, a frontend engineer and product developer based in Berlin, Germany. I’m currently working at METYCLE as a Frontend Engineer, building a circular economy for metals. On the side, I craft SaaS for communities I’m passionate about.',
+      'I’m Charles, a full stack & product engineer based in Berlin, Germany. I’m currently working at METYCLE, building a circular economy for metals. On the side, I craft SaaS for communities I’m passionate about.',
     url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
     images: [
       {
